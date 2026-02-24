@@ -28,7 +28,7 @@ float speed_per_second=30,jump_height=5;
 bool move_cube=0;
 bool game_start=0;
 
-
+//in form (time in ms,animation,direction)
 ROAD road[]= {{1486,0,1},{2828,0,0},{3277,0,1},{4597,3,0},{5030,3,1},{5968,3,0},{6418,3,3},{6862,3,2},{7295,3,3},{7736,3,2}//10
     ,{8185,3,3},{8651,3,2},{9978,0,3},{10396,2,0},{11703,2,3},{12176,1,0},{13054,2,3},{13491,1,2},{13920,1,3},{14387,1,2}
     ,{14816,1,3},{15281,1,2},{15718,1,3},{16609,0,2},{17063,1,1},{17517,1,2},{18820,1,1},{19251,1,2},{20181,1,3},{20619,1,2}
@@ -64,10 +64,10 @@ ROAD road[]= {{1486,0,1},{2828,0,0},{3277,0,1},{4597,3,0},{5030,3,1},{5968,3,0},
 const int LEFT=0,UP=1,RIGHT=2,DOWN=3;// up (1,0,0)
 const int ROAD_MAKING_MODE=-2,EDIT_MODE=-1,NORMAL=0,FALL=1,NORMAL_JUMP=2,HALF_JUMP=3,TELEPORT=4/*not implemented*/,ELEVATOR=5;
 
-vector<point> mainPoint,texPoint;
-vector<poly> mainPoly;
-vector<object> mainObject;
-vector<color> mainColor;
+vector<point> mainPoint,texPoint;//points are stored here
+vector<poly> mainPoly;//polygones stored here
+vector<object> mainObject;//objects stored here
+vector<color> mainColor;//colors ...
 map<string,int> nameToColor;
 vector<animation> animationStack;
 
