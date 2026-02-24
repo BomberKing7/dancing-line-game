@@ -1034,9 +1034,9 @@ int main(int argc, char** argv)
 {
 
     srand(time(0));
-    make_road();
     loadFile("world.mtl");
     loadFile("world.obj");
+    make_road();
     //loadFile("3d_models\\cars\\car_04.mtl");
     //loadFile("3d_models\\cars\\car_04.obj",{.01,.01,.01},{});
     output_objects();
