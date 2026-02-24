@@ -2,10 +2,6 @@
 #include <chrono>
 #include <cstdint>
 #include <iostream>
-#include <AL/al.h>
-#include <AL/alc.h>
-#include <AL/alut.h>
-
 
 uint64_t timeSinceEpochMillisec()
 {
